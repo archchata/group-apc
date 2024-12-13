@@ -2,12 +2,20 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
+const controller = require('./controller')
+const cors = require('cors');
+
+
+// Enable CORS for all requests
+app.use(cors());
 
 // parses JSON from incoming request
 app.use(express.json());
 
 // handle post requests to /api
-
+app.get('/api', controller.getImages, (req,res)=>{
+  return res.status(200).json(res.locals.imageUrls);
+})
 // Global error handling middleware
 // How can we trigger this to run?
 app.use((err, req, res, next) => {

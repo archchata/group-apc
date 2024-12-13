@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 // What else might we need to import here?
 import Feed from './Feed';
 
-const api_endpoint = 'http://localhost:8080/api';
+const api_endpoint = 'http://localhost:3000/api';
 
 // App consists of one feed
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
     <div style={styles.container}>
       <div>Hey, girl!</div>
       {/* What do we need to put here to render our feed? */}
-      <Feed />
+      <Feed url = {api_endpoint}/>
     </div>
   );
 };
@@ -25,3 +25,6 @@ const styles = {
 };
 
 // Nothing is showing up when we start our app ??? How do we render our app in the Browser
+const app = document.getElementById('app');
+const root = createRoot(app);
+root.render(<App/>);

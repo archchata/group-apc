@@ -47,5 +47,14 @@ module.exports = {
     devMiddleware: {
       publicPath: '/',
     },
+    
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://localhost:3000', // Backend server
+    //     changeOrigin: true,  // Adjusts the request origin header
+    //     secure: false,      // Disable SSL verification if needed
+    //   },
+    // }
+
   },
 };

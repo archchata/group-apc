@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 // each feeditem should have a spot for the player name,
 
-const FeedItem = () => {
+const FeedItem = ({url}) => {
   return (
     <>
-      <div style={styles.container}>
+      <div className='feedItem' style={styles.container}>
+        <img src= {url}/>
         {/* if we want each person to have a tile, what do we need to put here? */}
       </div>
     </>
@@ -20,3 +21,5 @@ const styles = {
     flex: 1,
   },
 };
+
+export default FeedItem;
