@@ -7,7 +7,6 @@ const FeedItem = ({url}) => {
     <>
       <div className='feedItem' style={styles.container}>
         <img src= {url}/>
-        {/* if we want each person to have a tile, what do we need to put here? */}
       </div>
     </>
   );

@@ -34,7 +34,7 @@ npm start
   - In `controller.js`, give the `controller` object a method called `getImages`. 
   - `getImages` should make a request to the url provided in the file
   - Export the `getImages` method so that you can use it in your `server.js` file.
-4. After `getImages` runs, end the request/response cycle with a function that sends the correct color back to the frontend in a JSON object.
+4. After `getImages` runs, end the request/response cycle with a function that sends the response from url request back to the frontend in a JSON object.
   - This function **must** be defined in the `server.js` file.
   - Hint: make sure the JSON object you're sending back matches the format that the frontend is expecting!
 

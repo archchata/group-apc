@@ -8,20 +8,17 @@ const controller = {
     fetch(url)
       .then((res)=>res.json())
       .then((arr)=>{
-        res.locals.imageUrls = arr.slice(0,5)
-        console.log("first five", res.locals.imageUrls )
+        res.locals.imageUrls = arr.slice(0,5);
         return next();
       })
       .catch((err)=>{
         next({
-          log: 'error caught in getImages middleware',
+          log: `error caught in getImages middleware ${err}`,
           status: 500,
-          message: {err: `An error occured ${err}`}
+          message: {err: `An error occured getting images `}
         })
-      })
-     
+      })     
   }
-
 };
 
 // Export the controller object

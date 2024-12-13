@@ -10,7 +10,6 @@ const App = () => {
   return (
     <div style={styles.container}>
       <div>Hey, girl!</div>
-      {/* What do we need to put here to render our feed? */}
       <Feed url = {api_endpoint}/>
     </div>
   );
