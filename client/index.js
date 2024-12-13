@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 // What else might we need to import here?
 import Feed from './Feed';
 
-const api_endpoint = 'http://localhost:8080/api';
+const api_endpoint = 'http://localhost:3000/api';
 
 // App consists of one feed
 const App = () => {

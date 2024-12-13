@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// This component should show a "feed" of players
+// This component should show a "feed" of images
 
 const Feed = () => {
   return (
@@ -20,12 +20,4 @@ const styles = {
   },
 };
 
-/*
-const players = {
-  Bryan: { 5050: true, popcorn: true, audience: true },
-  Jocelyn: { 5050: true, popcorn: true, audience: true },
-  Jose: { 5050: true, popcorn: true, audience: true },
-  Nathalie: { 5050: true, popcorn: true, audience: true },
-  Tyler: { 5050: true, popcorn: true, audience: true },
-};
-*/
+

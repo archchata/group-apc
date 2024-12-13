@@ -1,7 +1,12 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
 const PORT = 3000;
+
+
+// Enable CORS for requests from all origins
+app.use(cors());
 
 // parses JSON from incoming request
 app.use(express.json());
