@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-// each feeditem should have a spot for the player name,
 
+// Each feeditem should render an image from its url prop
 const FeedItem = () => {
   return (
     <>
       <div style={styles.container}>
-        {/* if we want each person to have a tile, what do we need to put here? */}
+        {/* What do we need to put here? */}
       </div>
     </>
   );

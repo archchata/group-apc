@@ -1,6 +1,5 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-// What else might we need to import here?
 import Feed from './Feed';
 
 const api_endpoint = 'http://localhost:3000/api';
@@ -10,7 +9,7 @@ const App = () => {
   return (
     <div style={styles.container}>
       <div>Hey, girl!</div>
-      {/* What do we need to put here to render our feed? */}
+      {/* What prop do we need to make available to feed? */}
       <Feed />
     </div>
   );

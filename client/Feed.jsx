@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
-// This component should show a "feed" of images
+// What else might we need to import here?
 
+// Feed consists of multiple feedItems
 const Feed = () => {
   return (
     <>
-      <div style={styles.container}></div>
+      <div style={styles.container}>
+        {/* What do we need to put here? */}
+      </div>
     </>
   );
 };
